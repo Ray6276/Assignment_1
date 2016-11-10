@@ -12,9 +12,9 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+    
     #prof{
-        width:20vw;
-        margin: auto;
+        left:38vw;
         height: 40vh;
         background-image: url(flag_blackbeard.gif);
         background-size: auto;
@@ -24,6 +24,7 @@
     #name{
         text-align: center;
         font-size: 20px;
+        top:25vh;
         }
     #title_space{
         width: 100vw;
@@ -71,7 +72,7 @@
        position: relative;
        left: 7vw;
         top:-7vh;
-       width: 10vw;
+       
         height:10vh;
         background-color: rgba(200,200,150,0.5);
         color: black;
@@ -81,8 +82,7 @@
        
     }
     #bio_space{
-        width: 100vw;
-        height: 80vh;
+      
         background-color: aqua;
     }
     #bio_pic{
@@ -93,16 +93,18 @@
         margin-left: 5vw;
         background-image: url(blackbeard.jpg);
         background-size: cover;
+        vertical-align: top;
         
     }
     #text{
         position:relative;
-        top:-140px;
+        margin-top:3px;
         display: inline-block;
         width: 40vw;
         height: 75vh;
         margin-left: 10vw;
         background-color: aqua;
+        vertical-align: top;
     }
     #banner2{
         width: 100vw;
@@ -118,71 +120,39 @@
         color: red;
     }
 </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+    
+    
+    
+
 <body>
-<div id = 'banner1'>
+<div id = 'banner1' class="col-lg-1">
     <h1>Blood ocean</h1>
 </div>
     
-<div id = 'prof'></div>   
-<p id = 'name'>Blackbeard</p>    
-<div id = 'title_space'>
-<div id ='prof_img1'><p class ='prof_title'>Edward Teach</p></div> 
-<div id ='prof_img2'><p class ='prof_title'>Quuen_Anne</p></div> 
-<div id ='prof_img3'><p class ='prof_title'>Flag</p></div> 
-<div id ='prof_img4'><p class ='prof_title' id = 'wanted_text'>Wanted</p></div> 
-<div id ='prof_img5'><p class ='prof_title'>Death</p></div> 
+<div class ='col-md-3' id = 'prof'></div>   
+<p id = 'name' class="col-sm-6">Blackbeard</p>    
+<div id = 'title_space' class="col-lg-1">
+
     
 </div>    
-<div id ='bio_space'>
-    <div id = 'bio_pic'></div>
-    <div id = 'text'>Edward Teach or Edward Thatch (c.1680 - 22 November 1718), better known as Blackbeard, was a notorious English pirate who operated around the West Indies and the eastern coast of the American colonies. Although little is known about his early life, he was probably born in Bristol, England. Recent genealogical research indicates his family moved to Jamaica where Edward Thatch, Jr. is listed as being a mariner in the Royal Navy aboard HMS Windsor in 1706.[1] He may have been a sailor on privateer ships during Queen Anne's War before settling on the Bahamian island of New Providence, a base for Captain Benjamin Hornigold, whose crew Teach joined sometime around 1716. Hornigold placed him in command of a sloop he had captured, and the two engaged in numerous acts of piracy. Their numbers were boosted by the addition to their fleet of two more ships, one of which was commanded by Stede Bonnet, but toward the end of 1717 Hornigold retired from piracy, taking two vessels with him.</div>
+<div id ='bio_space' class="col-ld-1">
+    
 </div> 
-<div id ='banner2' >
+<div id ='banner2'class="col-lg-1" >
 <h1>-----END------</h1>
 </div>
     
-    <script>
-    var picture1 = document.getElementById('prof_img1')
-    var picture2 = document.getElementById('prof_img2')
-    var picture3 = document.getElementById('prof_img3')
-    var picture4 = document.getElementById('prof_img4')
-    var picture5 = document.getElementById('prof_img5')
-    var title_display = document.getElementById('title_space')
-    var bio_pic = document.getElementById('bio_pic')
-    var title4 = document.getElementById('wanted_text')
-    
-    
-    picture1.onclick = function(){
-        picture1.style.height = '50vh';
-       
-    }
-    picture1.ondblclick = function(){
-        picture1.style.height = '48vh';
-    }
-    
-    picture2.onclick = function(){
-        bio_pic.style.backgroundImage = "url('Queen-Anne.gif')";
-        bio_pic.style.backgroundSize = 'contain';
-       
-    }
-     
-    picture3.onclick = function(){
-        title_display.style.backgroundColor = 'black';
-        
-    }
-    
-    picture4.onmouseover = function(){
-        
-        title4.style.color = 'red';
-    }
-    
-    picture4.onmouseout = function(){
-        title4.style.color = 'black';
-    }
-    
-    picture5.onclick = function(){
-        window.location.reload()
-    }
+    <script src = 'myjs.js'>
     
     </script>
 </body>
